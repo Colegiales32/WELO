@@ -1,0 +1,134 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.contenedor_formulario {
+    padding-top: 20rem;
+   @include m.tablet {
+    padding-top:9rem;
+   }
+
+}
+
+
+.contacto-bg {
+    background-image: url(../../../img/buzo-perro.JPG);
+    background-position: 50%;
+    height: 40rem;
+    background-size:cover;
+    border-radius: .5rem;
+    width: 80%;
+    margin: auto;
+}
+
+.formulario {
+    box-shadow: 10px 10px 20px 0px v.$gris;
+    -webkit-box-shadow: 10px 10px 20px 0px v.$gris;
+    -moz-box-shadow: 10px 10px 20px 0px v.$gris;
+font-family: v.$enlaces;
+width: 90%;
+background-color:v.$negro;
+color: v.$blanco;
+margin: -5rem auto 0 auto;
+border-radius: .5rem;
+padding: 2rem 0 1rem 0;
+@include m.desktop {
+    width:75%;
+}
+}
+
+.campo { 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    @include m.tablet {
+       display: flex;
+       flex-direction: row;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+   }
+}
+
+.campo__label { font-weight: 700;
+    font-size: 1.5rem;
+    @include m.tablet {
+        flex: 0 0 9rem;
+    }
+}
+
+.campo__field {
+   @include m.telefono {
+    margin:0 auto 2rem auto;
+   }
+     flex: 1;
+     border: none;
+     border-bottom-color: v.$blanco;
+     border-bottom-style: solid;
+     margin-right: 2rem;
+     border-width: 1px;
+     height: 2.5rem;
+     background-color: v.$negro;
+     width: 90%;
+     margin: auto;
+     outline: none;
+     caret-color: v.$blanco;
+    
+}
+
+.campo__field--textarea { 
+   flex: 1;
+   height: 10rem;
+   margin-right: 2rem;
+   border: none;
+   border-bottom-color: v.$blanco;
+   border-bottom-style:solid ;
+   margin-right: 2rem;
+   border-width: 1px;
+   background-color: v.$negro;
+   outline: none;
+   width:90%;
+   margin: 0 auto 0 auto;
+   caret-color: v.$blanco;
+   
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: v.$blanco;
+}
+
+.boton_contacto {
+    height: 2rem;
+    background-color: v.$negro;
+    font-family: v.$titulos;
+    font-weight: 700;
+    border-radius: .5rem;
+    border-width: .1rem;
+    border-color: v.$blanco;
+    color: v.$blanco;
+    padding: 0 24px;
+    width:75%;
+    margin:2rem auto 1rem auto;
+    cursor: pointer;
+    @include m.tablet{
+        width: 10%;
+        margin-right: 2rem;
+    }
+}
+
+
+.error {
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.correcto {
+    background-color: rgb(74, 185, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}

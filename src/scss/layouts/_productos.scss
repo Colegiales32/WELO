@@ -1,0 +1,101 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.productos {
+    @include m.tablet {
+        display: flex;
+        justify-content: center;
+        width: 70%;     
+        gap: 1rem;
+    }
+    width: 70%;
+    margin:2rem auto;
+}
+
+.productos-bg {
+    width: 90%;
+    margin: auto;
+    background-image:url('../../../img/fondo-puente.JPG');
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.producto {
+    img {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    h2 {
+    color: v.$blanco;
+    margin-bottom: .5rem;
+    font-family: v.$titulos;
+    }
+    a {
+        font-size: 1.2em;
+        text-decoration: none;
+        color:v.$blanco;
+        font-family:v.$enlaces;
+        display: block;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+//Productos Muestra
+
+.producto_muestra {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    @include m.desktop {
+        display: flex;
+        justify-content: space-between;
+        gap:3rem;
+        margin: auto;
+    }
+    margin: auto;
+    width: 80%;
+
+ .producto_descripcion {
+    flex-basis: 50%;
+    p {
+    color:v.$blanco;
+    font-size: 1.5rem;
+    }
+    h2 {
+        color:v.$blanco;
+        font-size: 2rem;
+    }
+}
+.imagen_producto {
+     flex-basis: 50%;
+ }
+    
+}
+
+.producto_muestra-bg {
+    background-image: url('../../../img/bolsa-ropa.JPG');
+    background-size: cover;
+    background-position: top;
+    margin-top: 15rem;
+    padding: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    position: relative;
+    &::before {
+        content:'';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.503);
+        position: absolute;
+  
+      }
+}

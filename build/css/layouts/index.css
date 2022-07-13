@@ -1,0 +1,459 @@
+.logo {
+  margin: 1rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .logo {
+    text-align: left;
+    margin-left: 4rem;
+  }
+}
+.logo img {
+  height: 5rem;
+}
+.logo img:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-0.5px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+.header {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #000;
+  width: 100%;
+}
+.header h1 {
+  color: #FFFFFF;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header .contenido_header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navegacion__principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.navegacion__principal a {
+  width: 20%;
+  margin: 0.5rem auto;
+  display: block;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: border-bottom-color 1s;
+  text-decoration: none;
+}
+.navegacion__principal a:hover {
+  border-bottom: solid 0.2rem #F53756;
+  border-radius: 0;
+}
+
+.barra__promociones {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: ridge 2px rgb(88, 88, 88);
+  border-bottom: ridge 4px rgb(88, 88, 88);
+}
+
+.contenedor {
+  width: 95%;
+  margin: auto;
+}
+
+.enlace {
+  color: #FFFFFF;
+}
+
+.enlace_seleccionado {
+  color: #F53756;
+}
+
+.enlace_seleccionado:hover {
+  color: #F53756;
+}
+
+.submenu_productos {
+  height: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  user-select: none;
+  transition: height 1s ease;
+}
+.submenu_productos .link_submenu {
+  transition: all 1s;
+  color: #000;
+  cursor: default;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  margin: auto;
+}
+
+.active {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 5rem;
+  transition: height 1s ease;
+}
+.active .link_submenu {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  margin: auto;
+  transition: all 1s;
+}
+.active .link_submenu:hover {
+  color: #F53756;
+  border-bottom: solid 0.2rem #F53756;
+}
+.active .enlace_seleccionado {
+  color: #F53756;
+}
+
+.contendor-slider {
+  width: 100%;
+}
+
+.slider {
+  margin-top: 24rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .slider {
+    margin-top: 13rem;
+  }
+}
+
+.image1,
+.image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image1 {
+  background-image: url("../../../img/whirly.jpg");
+}
+
+.image2 {
+  background-image: url("../../../img/manza-nico2.JPG");
+  background-position: top;
+  left: 50%;
+  border-left: 3px solid #111;
+}
+
+.productos {
+  width: 70%;
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  .productos {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    gap: 1rem;
+  }
+}
+
+.productos-bg {
+  width: 90%;
+  margin: auto;
+  background-image: url("../../../img/fondo-puente.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+.producto img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.producto h2 {
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.producto a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Heebo", sans-serif;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.producto_muestra {
+  position: relative;
+  margin: auto;
+  width: 80%;
+}
+.producto_muestra img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .producto_muestra {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: auto;
+  }
+}
+.producto_muestra .producto_descripcion {
+  flex-basis: 50%;
+}
+.producto_muestra .producto_descripcion p {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.producto_muestra .producto_descripcion h2 {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+.producto_muestra .imagen_producto {
+  flex-basis: 50%;
+}
+
+.producto_muestra-bg {
+  background-image: url("../../../img/bolsa-ropa.JPG");
+  background-size: cover;
+  background-position: top;
+  margin-top: 15rem;
+  padding: 2rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.producto_muestra-bg::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.503);
+  position: absolute;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10rem;
+  background: linear-gradient(0deg, rgb(88, 88, 88) 74%, rgba(139, 139, 139, 0) 100%);
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer img {
+  height: 8rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+footer p {
+  font-size: 1.5rem;
+  margin: auto 2rem;
+}
+
+.logo_footer {
+  display: flex;
+  align-items: center;
+}
+.logo_footer h3 {
+  margin-left: 1rem;
+  font-weight: lighter;
+}
+.logo_footer h3 span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.contenedor_formulario {
+  padding-top: 20rem;
+}
+@media (min-width: 768px) {
+  .contenedor_formulario {
+    padding-top: 9rem;
+  }
+}
+
+.contacto-bg {
+  background-image: url(../../../img/buzo-perro.JPG);
+  background-position: 50%;
+  height: 40rem;
+  background-size: cover;
+  border-radius: 0.5rem;
+  width: 80%;
+  margin: auto;
+}
+
+.formulario {
+  box-shadow: 10px 10px 20px 0px rgb(88, 88, 88);
+  -webkit-box-shadow: 10px 10px 20px 0px rgb(88, 88, 88);
+  -moz-box-shadow: 10px 10px 20px 0px rgb(88, 88, 88);
+  font-family: "Heebo", sans-serif;
+  width: 90%;
+  background-color: #000;
+  color: #FFFFFF;
+  margin: -5rem auto 0 auto;
+  border-radius: 0.5rem;
+  padding: 2rem 0 1rem 0;
+}
+@media (min-width: 992px) {
+  .formulario {
+    width: 75%;
+  }
+}
+
+.campo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .campo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.campo__label {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .campo__label {
+    flex: 0 0 9rem;
+  }
+}
+
+.campo__field {
+  flex: 1;
+  border: none;
+  border-bottom-color: #FFFFFF;
+  border-bottom-style: solid;
+  margin-right: 2rem;
+  border-width: 1px;
+  height: 2.5rem;
+  background-color: #000;
+  width: 90%;
+  margin: auto;
+  outline: none;
+  caret-color: #FFFFFF;
+}
+@media (min-width: 375px) {
+  .campo__field {
+    margin: 0 auto 2rem auto;
+  }
+}
+
+.campo__field--textarea {
+  flex: 1;
+  height: 10rem;
+  margin-right: 2rem;
+  border: none;
+  border-bottom-color: #FFFFFF;
+  border-bottom-style: solid;
+  margin-right: 2rem;
+  border-width: 1px;
+  background-color: #000;
+  outline: none;
+  width: 90%;
+  margin: 0 auto 0 auto;
+  caret-color: #FFFFFF;
+}
+
+::placeholder {
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.boton_contacto {
+  height: 2rem;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border-width: 0.1rem;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  padding: 0 24px;
+  width: 75%;
+  margin: 2rem auto 1rem auto;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .boton_contacto {
+    width: 10%;
+    margin-right: 2rem;
+  }
+}
+
+.error {
+  background-color: rgb(185, 0, 0);
+  text-align: center;
+  padding: 1rem;
+  color: var(--blanco);
+  text-transform: uppercase;
+}
+
+.correcto {
+  background-color: rgb(74, 185, 0);
+  text-align: center;
+  padding: 1rem;
+  color: var(--blanco);
+  text-transform: uppercase;
+}
