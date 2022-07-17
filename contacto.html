@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="contenido_header">
+        <div class="logo">
+            <a href="index.html" >
+                <img src="img/logo_welo2.png" alt="logo welo">
+            </a>
+        </div>
+        <div class="navegacion__principal">
+            <a href="index.html" class="enlace">Inicio</a>
+            <a href="productos.html" class="enlace">Productos</a>
+            <a href="contacto.html" class="enlace_seleccionado">Contacto</a>   
+        </div>
+    </div>
+     <div class="barra__promociones">
+            <p>3 y 6 cuotas sin interes</p>
+    </div>
+</header>
+
+    
+  <main class="contenedor_formulario">
+        <h3 class="centrar-texto">Sobre Nosotros</h3>
+     
+        <div class="contacto-bg">
+        </div>
+
+        <form class="formulario" action="https://formspree.io/f/xyyoryjz" method="post">
+            <div class="campo">
+              <label class="campo__label" for="nombre">Nombre </label>
+              <input class="campo__field" name="nombre" type="text" placeholder="Tu Nombre" id="nombre" required>
+            </div>
+            <div class="campo">
+              <label class="campo__label" for="email">Email  </label>
+              <input class="campo__field" name="email" type="email" placeholder="Tu email" id="email" required>
+            </div>
+            <div class="campo">
+              <label class="campo__label" class="campo__label" for="mensaje">Mensaje</label>
+              <textarea class="campo__field--textarea" name="mensaje" id="mensaje" placeholder="Dejanos Tu Mensaje" required></textarea>
+            </div>
+
+            <div class="campo boton_primario">
+                <button class="boton_contacto" type="submit">Enviar</button>
+            </div>
+            
+        </form>
+    </main>
+    
+    <div class="boton_whatsapp">
+      <a href="https://api.whatsapp.com/send/?phone=+54%209%2011%206995-4808&text=Ruso+puto&type=phone_number&app_absent=0" alt="" class="logo_whatsapp"><img src="img/whatsapp.png" alt=""></a>
+    </div>
+
+
+     <footer>
+        <div class="logo_footer">
+            <img src="img/logo_welo2.png" alt="logo welo">
+            <h3><span>WELO COMPANY</span> since 2022</h3>
+        </div>
+        <p>Todos los derechos reservados</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
