@@ -60,7 +60,7 @@
   }
 }
 .navegacion__principal a {
-  width: 20%;
+  width: 30%;
   margin: 0.5rem auto;
   display: block;
   font-family: "Heebo", sans-serif;
@@ -116,13 +116,18 @@
   transition: height 1s ease;
 }
 .submenu_productos .link_submenu {
-  transition: all 1s;
-  color: #000;
-  cursor: default;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  padding: 1rem;
-  margin: auto;
+  display: none;
+}
+@media (min-width: 375px) {
+  .submenu_productos .link_submenu {
+    transition: all 1s;
+    color: #000;
+    cursor: default;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    padding: 1rem;
+    margin: auto;
+  }
 }
 
 .active {
@@ -199,23 +204,25 @@
 
 .productos {
   width: 70%;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 @media (min-width: 768px) {
   .productos {
     display: flex;
     justify-content: center;
     width: 70%;
-    gap: 1rem;
+    gap: 4rem;
   }
 }
 
 .productos-bg {
   width: 90%;
-  margin: auto;
+  margin: 3rem auto;
   background-image: url("../../../img/fondo-puente.JPG");
   background-size: cover;
   background-position: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .producto img {
@@ -226,14 +233,16 @@
   color: #FFFFFF;
   margin-bottom: 0.5rem;
   font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
 }
 .producto a {
-  font-size: 1.2em;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #FFFFFF;
   font-family: "Heebo", sans-serif;
   display: block;
   margin-bottom: 2rem;
+  text-align: end;
 }
 
 .producto_muestra {
@@ -321,6 +330,7 @@ footer p {
 }
 
 .contenedor_formulario {
+  margin-top: 4rem;
   padding-top: 20rem;
 }
 @media (min-width: 768px) {
@@ -460,4 +470,69 @@ footer p {
   padding: 1rem;
   color: var(--blanco);
   text-transform: uppercase;
+}
+
+.titulo_categorias {
+  text-align: center;
+}
+.titulo_categorias h2 {
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+
+.main_categorias {
+  margin-top: 20rem;
+}
+@media (min-width: 768px) {
+  .main_categorias {
+    margin-top: 12rem;
+  }
+}
+
+.categorias {
+  width: 70%;
+  margin: 1rem auto;
+}
+@media (min-width: 768px) {
+  .categorias {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    gap: 3rem;
+  }
+}
+
+.categorias-bg {
+  width: 90%;
+  margin: 3rem auto;
+  background-image: url("../../../img/fondo-puente.JPG");
+  background-size: cover;
+  background-position: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.categoria img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.categoria h2 {
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.vermas {
+  display: flex;
+  justify-content: end;
+}
+.vermas .enlace_mas {
+  margin-right: 4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Heebo", sans-serif;
 }

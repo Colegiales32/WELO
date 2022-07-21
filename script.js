@@ -80,4 +80,5 @@ menuProductos.addEventListener('mouseover',function(){
 
 
 main.addEventListener('mouseover',function(){
-	submenuProductos.c
+	submenuProductos.classList.remove('active');
+	submenuProductos.classList.add('submenu_productos')})

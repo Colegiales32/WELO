@@ -6,19 +6,20 @@
         display: flex;
         justify-content: center;
         width: 70%;     
-        gap: 1rem;
+        gap: 4rem;
     }
     width: 70%;
-    margin:2rem auto;
+    margin:1rem auto;
 }
 
 .productos-bg {
     width: 90%;
-    margin: auto;
+    margin: 3rem auto;
     background-image:url('../../../img/fondo-puente.JPG');
     background-size: cover;
     background-position: center;
-    
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     
 }
 
@@ -31,14 +32,16 @@
     color: v.$blanco;
     margin-bottom: .5rem;
     font-family: v.$titulos;
+    font-size: 2rem;
     }
     a {
-        font-size: 1.2em;
+        font-size: 1.5rem;
         text-decoration: none;
         color:v.$blanco;
         font-family:v.$enlaces;
         display: block;
         margin-bottom: 2rem;
+        text-align: end;
     }
 }
 

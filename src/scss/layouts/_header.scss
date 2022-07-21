@@ -69,7 +69,7 @@
        
     }
     a { 
-        width: 20%;
+        width: 30%;
         margin: .5rem auto;
         display: block;
         font-family: 'Heebo', sans-serif;
@@ -79,17 +79,18 @@
         text-align: center;
         transition: border-bottom-color 1s;
         text-decoration: none;
-    
-
-    
+       
         &:hover {
-           
+            
             border-bottom: solid 0.2rem v.$rojo;
             border-radius: 0;
             
         }
     }
+    
+    
 }
+
 
 .barra__promociones {
     color: v.$blanco;
@@ -129,14 +130,19 @@
     user-select: none;
     transition: height 1s ease;
     .link_submenu {
-        transition:all 1s;
-        color: v.$negro;
-        cursor: default;
-        text-decoration: none;
-        font-family: v.$titulos;
-        padding: 1rem;
-        margin: auto;
+        display:none;
+        @include m.telefono {
+            transition:all 1s;
+            color: v.$negro;
+            cursor: default;
+            text-decoration: none;
+            font-family: v.$titulos;
+            padding: 1rem;
+            margin: auto;   
+        }
+       
     }
+    
 }
 .active {
     display: flex;

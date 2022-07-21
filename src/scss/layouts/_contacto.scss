@@ -2,6 +2,7 @@
 @use '../base/variables' as v;
 
 .contenedor_formulario {
+    margin-top: 4rem;
     padding-top: 20rem;
    @include m.tablet {
     padding-top:9rem;
